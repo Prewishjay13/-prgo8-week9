@@ -1,0 +1,115 @@
+/* Reset default styles */
+body, figure, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ul, ol, li, pre, form, fieldset, input, textarea, blockquote {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.note {
+  font-size: 14px;
+  margin-top: 20px;
+  color: #777;
+}
+
+.navigation-nav {
+  background-color: #333;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-btn {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.navigation-btn:hover {
+  background-color: #555;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .container {
+      padding: 10px;
+  }
+
+  h1 {
+      font-size: 28px;
+  }
+
+  p {
+      font-size: 14px;
+  }
+}
+#submit-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+#submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Result display */
+#userInput {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+#result {
+  margin-top: 10px;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-group div {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script defer src="app.js" type="module"></script>
+    <title>Rice</title>
+</head>
+
+<body>
+ <nav class="navigation-nav">
+    <div class="menu">
+      <a class="navigation-btn" href="index.html">Home</a> 
+      <a class="navigation-btn" href="doc.html">Documentation</a>
+      <a class="navigation-btn" href="decisiontree.html">Rice</a>   
+         
+    </div>
+  </nav>
+    <div class="container">
+        <h1>Documentation</h1>
+        <p id="doc">This webpage uses 2 types of learning. Regression and Classification.<br>
+          For the Rice Dataset I used the decision tree classification method and ml classifier.<br>
+          Which was really hard to figure out! And for the protein I used ml5 regression.
+            </p>
+        <br>
+        <p>The accuracy of the rice dataset was around 99.6%.</p><br>
+        <p>The reason for this is because the rice dataset is very large with over 10k entries</p>
+        <p>I cleaned the rice dataset up by rewriting some labels.</p>
+        <p>I also had to remove some of the data which might have influenced the accuracy of the model</p>
+        <p>The model was really big and had to be reduced in size because the training was taking so long the</p>
+        <p>the application started crashing.</p>
+        <p>After that I tried using Classification on the dataset of ml5.</p><br>
+        <p>Using regression on the protein/nutrition dataset was a no go.</p>
+        <p>There were a lot of datapoints missing and the output would not be accurate.</p>
+        <p>So i used it on the rice Data set to see if it can predict the roundness of a grain.</p>
+        <p>Why? Because I wanted to try to combine to models and output them on the same page.</p><br>
+        <p>When it came to using classification with ml 5 that was an absolute nightmare.</p>
+        <p>After reusing old code and trying to make it do a classification and failing I used one of my</p><br>
+        <p> older code that worked and changed it to work with the dataset. But the Dataset is huge</p>
+        <p>the thing ive learned is that decision trees is faster when it comes to classification.</p>
+        <p>Ml5 Classification might be great too but it gets slow with big datasets, and cleaning datasets with 10's of thousands of datapoints</p>
+        <p>will take more time than just using a .filter method to clean it up.</p>
+        <br>
+        <a class="navigation-btn" target="_blank" href="https://www.kaggle.com/datasets/mssmartypants/rice-type-classification">Rice</a><br>
+        <a class="navigation-btn" target="_blank" href="https://www.kaggle.com/datasets/niharika41298/nutrition-details-for-most-common-foods">Nutrition</a>
+        <br>
+        <br>
+        <p class="note">Note about the model:<br>
+        The decision tree model has an accuracy of 99.6%. This is because of its size.</p>
+    </div>
+</body>
+</html>

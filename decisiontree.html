@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script defer src="webbapp2.js" type="module"></script>
+    <script defer src="model-load.js" type="module"></script>
+    <title>Check what planet you found</title>
+</head>
+
+<body>
+  <nav class="navigation-nav">
+    <div class="menu">
+      <a class="navigation-btn" href="index.html">Home</a>   
+      <a class="navigation-btn" href="doc.html">Documentation</a>
+      <a class="navigation-btn" href="decisiontree.html">Rice D.T</a>   
+ 
+    </div>
+  </nav>
+    <div class="container">
+      <div>
+        <h1>Predict what type of rice you are eating</h1>
+      </div>
+      <div class="input-group">
+        <div><input type="text" id="length" placeholder="How long is the grain"/></div>
+        <div><input type ="text" id="height" placeholder="What is the height"/></div>
+        <div><input type ="text" id="diameter" placeholder="How thick is the grain"/></div>
+        <div><input type ="text" id="area" placeholder="What is the area(oppervlakte) of the grain"/></div>
+        <button class="space-btn" id="submit-button">Predict</button>
+      </div>    
+      <div>
+        <p id="userInput"></p>
+        <p id="result"></p>
+      </div>
+      <!-- <div id="view"></div> -->
+    </div>
+  </body>
+</html>
